@@ -1,0 +1,33 @@
+# one example which contains all props of OOPs
+
+class Person:  # property + function
+    def __init__(self,name,age,city):
+        self.name = name
+        self.age = age
+        self.city = city
+
+    def info(self):
+        print(f'name is {self.name} age is {self.age} city is {self.city}')
+
+
+class Member(Person):  # property
+    def __init__(self,name,age,city,gender,mobile):
+        Person.__init__(self,name,age,city)  # data hiding / reference of instance var
+        self.gender = gender
+        self.mobile = mobile
+
+
+class Record(Member):
+    def info(self):
+        print('name is',self.name,'age is',self.age)
+        print('gender is',self.gender,'city is',self.city)
+        print('mobile number is',self.mobile)
+
+
+p = Person('raja','46','hosur')  # encapsulation
+p.info()
+
+r = Record('alvi','91','chennai','female','8940655130')  # encapsulation
+r.info()
+
+p.info()
