@@ -1,0 +1,8 @@
+Python
+ Machine learning
+ DeepLearning
+ Genarative AI
+
+Fastapi
+MCP
+RAG
